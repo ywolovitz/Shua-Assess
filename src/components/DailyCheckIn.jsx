@@ -45,9 +45,7 @@ export default function DailyCheckIn({ onSave }) {
       {/* Date */}
       <header className="w-full max-w-md mb-4">
         <div className="text-center">
-          <p className="text-sm uppercase tracking-wide text-gray-500">
-            Today
-          </p>
+          <p className="text-sm uppercase tracking-wide text-gray-500">Today</p>
           <h1 className="text-2xl font-bold">{today}</h1>
         </div>
       </header>
@@ -62,7 +60,7 @@ export default function DailyCheckIn({ onSave }) {
           onComplete={handleComplete}
         />
         <p className="mt-2 text-sm text-gray-500">
-          You have 60 seconds to rate today
+          Please take a quick mintue to rate Shua's behaviour today.
         </p>
       </section>
 
@@ -396,7 +394,9 @@ function TimerCircle({
 
         {/* Progress (anticlockwise, starting at 12 o'clock) */}
         <g
-          transform={`rotate(-90 ${size / 2} ${size / 2}) translate(${size} 0) scale(-1 1)`}
+          transform={`rotate(-90 ${size / 2} ${
+            size / 2
+          }) translate(${size} 0) scale(-1 1)`}
         >
           <circle
             cx={size / 2}
@@ -492,4 +492,3 @@ function TextIcon() {
     </svg>
   );
 }
-
